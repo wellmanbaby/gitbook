@@ -81,3 +81,68 @@ var per1 = createObject("小明",20);
 3. 有返回值-----------------------------------------3. 没有返回值
 4. new之后的对象是当前对象----------------------4. this是当前对象
 5. 直接调用函数就可以创建对象-------------------5. 通过new的方式来创建对象
+
+# 构造函数和实例对象以及原型对象之间的关系
+```
+var arr = new Array(10,20,30,40)//通过构造函数实例化对象并初始化
+arr.join()//join是方法，实例对象调用的方法
+console.dir(arr),//join方法在实例对象_proto_原型中
+console.log(arr._proto == Array.prototype),//true
+```
+1. 构造函数可以实例化对象
+2. 构造函数中有一个属性叫prototype，是构造函数的原型对象
+3. 构造函数的原型对象（prototype）中有一个constructor构造器，这个构造器指向的就是自己所在的自己所在的原型对象所在的构造函数
+4. 实例对象的原型对象（_proto_）指向的是该构造函数的原型对象
+5. 构造函数的原型对象（prototype）中的方法是可以被实例对象直接访问的
+
+# 原型的简单语法
+
+```
+function Student(name,age,sex){
+    this.name = name;
+    this.age = age;
+    this.sex = sex;
+}
+Student.prototype = {
+    height: "188",//不必Student.prototype.height="188"
+    weight: "55kg",
+    study:function(){
+        console.log("学习");
+    }
+}
+var stu = new Student("段飞"，20，“男”)；
+stu.study();
+
+```
+# 进一步研究构造函数和实例对象之间的关系
+
+```
+function Student(name,age,sex){
+    this.name = name;
+    this.age = age;
+    this.sex = sex;
+    study:function(){
+        console.log("学习");
+    }；
+}
+//构造函数实例化对象
+var stu = new Student("段飞"，20，“男”)；
+//实例对象是通过构造函数来创建
+stu.study();
+console.log(per instanceof Person);//true
+console.log(per.constructor == Person);//true
+console.dir(per);//实例
+console.dir(Person);//构造函数
+console.log(per._proto_.constructor == Person.prototype.constructor);//true
+console.log(per._proto_constructor == Person.prototype.constructor);//true
+```
+## 总结
+### 实例对象和构造函数之间的关系：
+1. 实例对象是通过构造函数来创建的  --->创建的过程叫实例化
+2. 如何判断这个对象是不是这个数据类型？
+    1. 通过构造器的方式 实例对象.构造器 == 构造函数的名字
+    2. 对象instanceof构造函数名字（尽量用此方）
+
+# 构造函数创建带来的问题 --引出原型的作用
+
+
