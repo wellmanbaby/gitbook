@@ -144,5 +144,57 @@ console.log(per._proto_constructor == Person.prototype.constructor);//true
     2. 对象instanceof构造函数名字（尽量用此方）
 
 # 构造函数创建带来的问题 --引出原型的作用
+```
+function Person(name,age){
+    this.name = name;
+    this.age = age;
+    eat:function(){
+        console.log("吃屎");
+    }；
+}
+var per1 = new Person("小白", 20);
+var per2 = new Person("小黑", 30);
 
+per1.eat();//不是同一个方法，很浪费空间跟内存
+per2.eat();//引出原型的作用之一，数据共享，节省内存空间
+console,log(per1.eat == per2.eat);//false
+
+//原型
+function Person(name,age){
+    this.name = name;
+    this.age = age
+}//通过原型添加方法，解决数据共享，节省内存空间
+Person.prototype.eat:function(){
+        console.log("吃屎");
+    }；
+var per1 = new Person("小白", 20);
+var per2 = new Person("小黑", 30);
+per1.eat();
+per2.eat();
+console,log(per1.eat == per2.eat);//true
+```
+
+# 体会面向过程和面向对象的编程思想
+
+```
+//构造函数
+function Person(sex,age){
+    this.sex = sex;
+    this.age = age
+}
+//通过原型添加方法
+Person.prototype.eat:function(){
+        console.log("吃屎");
+    }；
+var per = new Person("男",20);
+console.dir(per);//实例对象
+console.dir(Person);//构造函数的名字
+```
+1. 实例对象中有两个属性(sex,age)，另外还有_proto_这个属性，
+2. 构造函数中并没有sex和age这两个属性
+3. 实例对象中的属性_proto_也是一个对象，叫原型，不是标准属性，用于浏览器识别；
+4. 构造函数中有一个属性prototype，也是一个对象，叫原型，是标准属性，程序员使用；
+5. console.log(per._proto_.constructor ==Person.prototype.constructor);//true
+6. 原型------------>_proto_或者prototype都是原型对象；
+7. 原型的作用，var per2 = new Person("发"，30);console.log(per.eat == per2.eat)//true,即原型的作用为共享数据，节省内存空间；
 
