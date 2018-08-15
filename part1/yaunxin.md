@@ -198,3 +198,65 @@ console.dir(Person);//构造函数的名字
 6. 原型------------>_proto_或者prototype都是原型对象；
 7. 原型的作用，var per2 = new Person("发"，30);console.log(per.eat == per2.eat)//true,即原型的作用为共享数据，节省内存空间；
 
+
+# 原型中的方法是可以互相调用的
+
+
+```
+function Person(age) {
+    this.age = age;
+    this.sayHi = function () {
+        console.log("Lets get laid!")
+    };
+    this.eat = function () {
+        console.log("eat my shit")
+        this.sayHi();
+    };
+}
+var per = new Person(20);
+per.eat();
+//eat my shit
+//Lets get laid!
+
+
+function Person(age) {
+    this.age = age;
+    this.sayHi = function () {
+        console.log("Lets get laid!")
+        this.eat();
+    };
+    this.eat = function () {
+        console.log("eat my shit")
+    };
+}
+var per = new Person(20);
+per.sayHi();
+//Lets get laid!
+//eat my shit
+
+```
+# 原型中的方法是可以相互访问的
+
+
+```
+function Animal(name,age) {
+    this.name = name;
+    this.age = age;
+}
+Animal.prototype.eat = function () {
+        console.log("eat shit")
+        this.play();
+    };
+Animal.prototype.play = function () {
+        console.log("play shit")
+        this.sleep();
+    };
+Animal.prototype.sleep = function () {
+        console.log("sleep shit")
+    };
+var dog = new Animal("小王",20);
+dog.eat();
+//eat shit
+//play shit
+//sleep shit
+```
