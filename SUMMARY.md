@@ -6,6 +6,7 @@
   * [HTTP协议](part1/Http.md)
   * [JS](part1/js.md)
      * [原型](part1/yaunxin.md)
+     * [Array](part1/array.md)
   * [CSS](part1/css.md)
   * [HTML](part1/html.md)
      * [HTML5的新特性](part2/html1.md)
