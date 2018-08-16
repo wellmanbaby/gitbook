@@ -209,7 +209,7 @@ console.log(numbers); // [1, 2, 3]
 console.log(numbers.length); // 3
 ```
 
-
+## 数组方法
 ## prototype就没这么简单喽！
 
 **Array.prototype  属性表示 Array 构造函数的原型，并允许您向所有Array对象添加新的属性和方法。**
@@ -234,3 +234,44 @@ if(!Array.prototype.first) {
 Array.isArray(Array.prototype); 
 // true
 ```
+***
+## 数组方法
+
+**会改变自身的方法**
+
+**Array.prototype.copyWithin()** 
+
+**在数组内部，将一段元素序列拷贝到另一段元素序列上，覆盖原有的值。**
+
+**Array.prototype.fill()**
+
+**将数组中指定区间的所有元素的值，都替换成某个固定的值。**
+
+**Array.prototype.pop()**
+
+**删除数组的最后一个元素，并返回这个元素。**
+
+**Array.prototype.push()**
+
+**在数组的末尾增加一个或多个元素，并返回数组的新长度。**
+
+**Array.prototype.reverse()**
+
+**颠倒数组中元素的排列顺序，即原先的第一个变为最后一个，原先的最后一个变为第一个。**
+
+**Array.prototype.shift()**
+
+**删除数组的第一个元素，并返回这个元素。**
+
+**Array.prototype.sort()**
+
+**对数组元素进行排序，并返回当前数组。**
+
+**Array.prototype.splice()**
+
+**在任意的位置给数组添加或删除任意个元素。**
+
+**Array.prototype.unshift()**
+
+**在数组的开头增加一个或多个元素，并返回数组的新长度。**
+***
