@@ -1,4 +1,4 @@
-# Array操作方法
+# Array
 
 ****
 
@@ -82,6 +82,8 @@ console.log(iterator1.next().value);
 // expected output: Array [1, "b"]
 ```
 **实际上arr.entries()返回一个新的 Array 迭代器对象：Array Iterator，它的原型（__proto__:Array Iterator）上有一个next方法，可用用于遍历迭代器取得原数组的[key,value]。**
+
+## entries()方法拓展介绍
 
 **Array Iterator**
 ```
@@ -177,6 +179,37 @@ for (let e of iterator) {
 // [1, "b"] 
 // [2, "c"]
 ```
+## 回到length功能示例
+
+**最简单的遍历数组**
+
+
+```
+下面的例子中，通过数组下标遍历数组元素，并把每个元素的值修改为原值的2倍。
+var numbers = [1, 2, 3, 4, 5];
+var length = numbers.length;
+for (var i = 0; i < length; i++) {
+  numbers[i] *= 2;
+}
+// 遍历后的结果 [2, 4, 6, 8, 10]
+```
+**截断数组**
+
+
+```
+下面的例子中，如果数组长度大于 3，则把该数组的长度截断为 3 。
+
+var numbers = [1, 2, 3, 4, 5];
+
+if (numbers.length > 3) {
+  numbers.length = 3;
+}
+
+console.log(numbers); // [1, 2, 3]
+console.log(numbers.length); // 3
+```
+
+
 ## prototype就没这么简单喽！
 
 **Array.prototype  属性表示 Array 构造函数的原型，并允许您向所有Array对象添加新的属性和方法。**
