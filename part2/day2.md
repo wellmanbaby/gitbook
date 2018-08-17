@@ -15,3 +15,4 @@
           - [ ] unshift()
        - [x] 整理学习了Function中的Apply方法
           - [ ] 整理学习了Function中的call方法
+       - [x] 整理学习了HTML5的新特性
