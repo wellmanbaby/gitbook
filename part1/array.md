@@ -237,7 +237,7 @@ Array.isArray(Array.prototype);
 ***
 ## 数组方法
 
-**会改变自身的方法**
+## 会改变自身的方法
 
 **Array.prototype.copyWithin()** 
 
