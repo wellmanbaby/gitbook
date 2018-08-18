@@ -39,5 +39,6 @@
   * [学习安排](README.md)
      * [8月15号](part2/day1.md)
      * [8月16号](part2/day2.md)
+     * [8月17号](part2/day3.md)
   
   
