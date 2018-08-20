@@ -22,6 +22,4 @@
            - [x] include()
        - [x] 整理学习了遍历方法
            - [x] forEach()
-       - [x] 整理学习了date-
-       - [x] 整理学习了meta标签
-       - [x] 整理学习了canvas
+       
