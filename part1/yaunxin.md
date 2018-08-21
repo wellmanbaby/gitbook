@@ -260,3 +260,67 @@ dog.eat();
 //play shit
 //sleep shit
 ```
+ # 实例对象使用的属性和方法
+ 
+ 
+```
+function Person(age, sex){
+    this.age = age;
+    this.sex = sex;
+    this.eat = function(){
+        console.log("在构造函数中吃")
+    };
+}
+Person.prototype.sex = "女";
+
+
+var per = new Person(20,"男");
+console.log(per.sex);//男
+cosole.log(per)//Person实例对象
+```
+
+*实例对象使用的属性和方法，先在实例中查找，找到了则直接使用，找不到则去实例对象的_proto_指向的原型对象prototype中找，找到了则使用，找不到则报错*
+
+# 为内置对象添加添加原型方法
+
+**内置对象是系统自带的对象**
+
+**我们给系统的对象原型中添加方法，相当于在改变源码**
+
+我希望字符串中有一个倒序字符串的方法
+```
+String.prototype.myReverse = function(){
+    for(var i = this.length-1;i>=0;i--){
+        console.log(this[i]);
+    }
+};
+var str = "abcdefg";
+str.myReverse();
+```
+
+为Array内置对象的原型对象中添加方法（在该方法后面的数组都可以调用该方法）
+```
+Array.prototype.mySort = function(){
+    for(var i=0;i<this.length-1;i++){
+        for(var j=0;j<this.length-1-i;j++ ){
+            if(this[j]<this[j+1]){
+                var temp = this[j];
+                this[j] = this[j+1];
+                this[j+1] = temp;
+            }
+        }
+    }
+}
+
+var arr = [100,3,1,45,54]
+arr.mySort();
+
+```
+
+```
+String.prototype.sayHi = function(){
+    console.log(this+"你好")
+}
+var str2 = "小阳";
+str2.sayHi();
+ ```
