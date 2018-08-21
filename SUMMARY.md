@@ -29,6 +29,8 @@
            * [includes](part1/include.md)
         * [遍历方法]()
            * [forEach](part1/forEach.md)
+           * [every](part1/every.md)
+           * [filter](part1/filter.md)
   * [CSS](part1/css.md)
   * [HTML](part1/html.md)
      * [HTML5的新特性](part2/html1.md)
