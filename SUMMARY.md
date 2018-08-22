@@ -31,6 +31,9 @@
            * [forEach](part1/forEach.md)
            * [every](part1/every.md)
            * [filter](part1/filter.md)
+           * [map](part1/map.md)
+           * [values](part1/value.md)
+           * [keys](part1/keys.md)
   * [CSS](part1/css.md)
   * [HTML](part1/html.md)
      * [HTML5的新特性](part2/html1.md)
@@ -54,5 +57,6 @@
      * [8月17号](part2/day3.md)
      * [8月20号](part2/day4.md)
      * [8月21号](part2/day5.md)
+     * [8月22号](part2/day6.md)
   
   
