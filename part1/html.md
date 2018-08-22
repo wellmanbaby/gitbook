@@ -22,14 +22,15 @@
 2018-08-14
 1. **HTML5新特性，语义化**
 
-     **语义化**
+     语义化
       **用最恰当的HTML元素标记的内容**
-      1. **提升可访问性**
-      2. **有利于SEO**
-      3. **结构清晰，利于维护**
+      1. 提升可访问性
+      2. 有利于SEO
+      3. 结构清晰，利于维护
       
      [HTML5新特性](https://segmentfault.com/a/1190000010504564)
      [HTML5](https://segmentfault.com/a/1190000007215988)
+     [新特性](https://wellman.gitbook.io/project/html)
 
 
 2. **浏览器的标准模式和怪异模式**
@@ -48,7 +49,7 @@
       1. 盒模型的处理差异:    标准CSS盒模型的宽度和高度等于内容区的高度和宽度，不包含内边距和边框，而IE6之前的浏览器实现的盒模型的宽高计算方式是包含内边距和边框的。因此，对于IE，怪异模式和标准模式下的盒模型宽高计算方式是不一样的；
       
       2. 行内元素的垂直对齐:    很多早期的浏览器对齐图片至包含它们的盒子的下边框，虽然CSS的规范要求它们被对齐至盒内文本的基线。标准模式下，基于Gecko的浏览器将会对齐至基线，而在quirks模式下它们会对齐至底部。最直接的例子就是图片的显示。在标准模式下，图片并不是与父元素的下边框对齐的，如果仔细观察，你会发现图片与父元素下边框之间存在一点小空隙。那是因为标准模式下，图片是基线对齐的。而怪异模式下，则不存在这个问题
-
+[标准模式和怪异模式](https://wellman.gitbook.io/project/html/html2)
 
 3. **xhtml和html的区别**
 
@@ -70,15 +71,17 @@
          3. 元素属性用"包围,不能为空值里
          4. 在内容里不能有&, 需要转义，包括其他特殊字符<>
          5. 空元素以 />结尾
-         
+       [区别](https://wellman.gitbook.io/project/html/html3)   
 4. **使用data-的好处**
  
      [HTML5 data-* 自定义属性](https://www.cnblogs.com/dolphinX/p/3348458.html)
+     [date-](https://wellman.gitbook.io/project/html/html4)
      在HTML5中添加了data-的方式来自定义属性，所谓data-实际上就是data-前缀加上自定义的属性名，使用这样的结构可以进行数据存放。使用data-*可以解决自定义属性混乱无管理的现状。
 5. **meta标签**
 
     meta常用于定义页面的说明，关键字，最后修改日期，和其它的元数据。这些元数据将服务于浏览器（如何布局或重载页面），搜索引擎和其它网络服务。
     [HTML meta标签总结与属性使用介绍](https://segmentfault.com/a/1190000004279791)
+    [HTML meta](https://wellman.gitbook.io/project/html/html5)
 
 6. **meta viewport原理**
 
@@ -87,7 +90,9 @@
 
 7. **canvas**
  
-   HTML5 的标准已经出来好久了，但是似乎其中的 Canvas 现在并没有在太多的地方用到。一个很重要的原因是，Canvas 的标准还没有完全确定，不适合大规模用在生产环境。但是，Canvas 的优点也是很明显的，例如在绘制含有大量元素的图表的时候，SVG 往往因为性能问题而无法胜任，例如我见过的一次技术分享会的抽奖环节，虽然效果比较炫，但因为每个头像都是 DOM，利用 CSS3 控制的动画，导致了性能非常低下。此外，随着硬件性能的提高，视频截图、图像处理等功能也逐渐可以在网页上实现了，大多数网站用的是 Flash，但是 Flash 在 Mac 电脑上性能不高，还需要学一些额外的知识。Canvas 则是直接使用 JavaScript 来进行绘图，对 Mac 友好，所以不失为 Flash 的一个继承者。[使用 Canvas](http://www.techug.com/post/html5-canvas.html)
+   HTML5 的标准已经出来好久了，但是似乎其中的 Canvas 现在并没有在太多的地方用到。一个很重要的原因是，Canvas 的标准还没有完全确定，不适合大规模用在生产环境。但是，Canvas 的优点也是很明显的，例如在绘制含有大量元素的图表的时候，SVG 往往因为性能问题而无法胜任，例如我见过的一次技术分享会的抽奖环节，虽然效果比较炫，但因为每个头像都是 DOM，利用 CSS3 控制的动画，导致了性能非常低下。此外，随着硬件性能的提高，视频截图、图像处理等功能也逐渐可以在网页上实现了，大多数网站用的是 Flash，但是 Flash 在 Mac 电脑上性能不高，还需要学一些额外的知识。Canvas 则是直接使用 JavaScript 来进行绘图，对 Mac 友好，所以不失为 Flash 的一个继承者。
+   [使用 Canvas](http://www.techug.com/post/html5-canvas.html)
+   [Canvas](https://wellman.gitbook.io/project/html/html7)
 
 
 
@@ -128,6 +133,7 @@
    del==s （deleted）               有语义，定义删除的文字。
 
    [HTML被废弃的标签](https://www.jianshu.com/p/feb5d88f90bf)
+   [HTML被废弃的标签](https://wellman.gitbook.io/project/html/html8)
    
 9. **IE6 bug，和一些定位写法**
    
@@ -151,6 +157,7 @@
 （IE6默认的行高造成的，使用overflow:hidden;zoom:0.08;line-height:1px;解决）
 
    [IE6兼容性问题及IE6常见bug详细汇总](https://www.jb51.net/css/76894.html)
+   [IE6兼容性问题](https://wellman.gitbook.io/project/html/html9)
    
    
    
@@ -160,7 +167,9 @@
 然后浏览器根据Dom Tree上的Node分析css和Images，当文档下载遇到js时，js独立下载。
 那为什么还要将引用的外部js放在下面，外部css放在上面？（浏览器会有自己的解析顺序）
 仅仅是一种良好的编码习惯吗？还是的确会对性能有好处？好处体现在哪些方面？
-顺便问一下，有些知名网站的首页会把所有的js和css都写在html的head中，这又是一种什么现象？他们的考虑点在哪里？CSS、JS [放置位置与前端性能的关系](https://blog.csdn.net/bigtree_3721/article/details/51006066)
+顺便问一下，有些知名网站的首页会把所有的js和css都写在html的head中，这又是一种什么现象？他们的考虑点在哪里？CSS、JS 
+[放置位置与前端性能的关系](https://blog.csdn.net/bigtree_3721/article/details/51006066)
+[放置位置与前端性能的关系](https://wellman.gitbook.io/project/html/html10)
 
 
 11. **什么是渐进式渲染**
