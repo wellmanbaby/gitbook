@@ -35,6 +35,10 @@
            * [values](part1/value.md)
            * [keys](part1/keys.md)
   * [CSS](part1/css.md)
+      * [传统圣杯布局](part1/holycup.md)
+      * [flex圣杯布局](part1/flexholy.md)
+      * [CSS盒子模型](part1/cssbox.md)
+
   * [HTML](part1/html.md)
      * [HTML5的新特性](part2/html1.md)
      * [标准模式和怪异模式](part2/html2.md)
@@ -58,5 +62,6 @@
      * [8月20号](part2/day4.md)
      * [8月21号](part2/day5.md)
      * [8月22号](part2/day6.md)
+     * [8月23号](part2/day7.md)
   
   
