@@ -38,6 +38,9 @@
       * [传统圣杯布局](part1/holycup.md)
       * [flex圣杯布局](part1/flexholy.md)
       * [CSS盒子模型](part1/cssbox.md)
+      * [伪类和伪元素及锚伪类](part1/cssfake.md)
+      * [css实现隐藏页面的方式](part1/hide.md)
+      * [实现水平居中和垂直居中](part1/middle.md)
 
   * [HTML](part1/html.md)
      * [HTML5的新特性](part2/html1.md)

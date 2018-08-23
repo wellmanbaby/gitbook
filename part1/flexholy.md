@@ -65,7 +65,7 @@ css部分
 
     .main{
         display:flex;
-
+        flex-dirction:row;
         /* 
         flex:1 == 1 1 auto：剩余空间放大比例(flex-grow)  空间不足缩小比例(flex-shrink)    分配多余空间之前项目占据的主轴空间(flex-basis)
         flex:1指的是：中部区域自由伸缩

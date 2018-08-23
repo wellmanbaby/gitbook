@@ -11,15 +11,10 @@
            - [x] indexof()
            - [x] lastIndexof()
            - [x] include()
-       - [x] 整理学习了遍历方法
-           - [x] forEach()
-           - [x] every()
-           - [x] filter()
-           - [x] values()
-           - [x] keys()
-           - [x] maps()
        - [x] 复习了传统圣杯布局
        - [x] 学习了flex圣杯布局
-       - [x] 复习了data-的作用
-       - [x] 学习了前端优化之少用iframe
+       - [x] 学习了css盒子模型
+       - [x] 学习了伪类和伪元素及锚伪类
+       - [x] 学习了css实现隐藏页面的方式
+       - [x] 学习了实现水平居中和垂直居中
        
