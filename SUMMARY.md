@@ -40,7 +40,12 @@
       * [CSS盒子模型](part1/cssbox.md)
       * [伪类和伪元素及锚伪类](part1/cssfake.md)
       * [css实现隐藏页面的方式](part1/hide.md)
-      * [实现水平居中和垂直居中](part1/middle.md)
+      * [谈position以及display](part1/display.md)
+      * [解释{box-size:border-box}的作用](part1/border-box.md)
+      * [浮动](part1/float.md)
+      * [link与@inport](part1/link.md)
+      * [flexbox](part1/flexbox.md)
+      * [inline和inline-block](part1/inline.md)
 
   * [HTML](part1/html.md)
      * [HTML5的新特性](part2/html1.md)
@@ -66,5 +71,6 @@
      * [8月21号](part2/day5.md)
      * [8月22号](part2/day6.md)
      * [8月23号](part2/day7.md)
+     * [8月24号](part2/day8.md)
   
   
