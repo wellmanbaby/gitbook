@@ -5,5 +5,3 @@
        - [x] 学习了link和@import引入css的区别
        - [x] 学习了inline和inline-block的区别
        - [x] 学习了浮动元素引起的问题和解决办法
-       
-       

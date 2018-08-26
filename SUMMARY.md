@@ -52,7 +52,6 @@
       * [attribute和property的区别](part1/property.md)
       * [流式布局](part1/liushi.md)
       * [移动端布局方案](part1/yidong.md)
-
   * [HTML](part1/html.md)
      * [HTML5的新特性](part2/html1.md)
      * [标准模式和怪异模式](part2/html2.md)
@@ -79,5 +78,7 @@
      * [8月23号](part2/day7.md)
      * [8月24号](part2/day8.md)
      * [8月25号](part2/day9.md)
+     * [8月26号](part2/day10.md)
+  
   
   
