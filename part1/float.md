@@ -72,4 +72,30 @@
 ```
 ## 提升层级半径
 
+**其实这个不难理解，一个块级标签元素是由属性和内容构成的。**
+
+**不过，当两个本来是各占一排的块级标签浮动时，会脱离文档流，上面的div标签不能占位子了，下面的div标签的属性会顶替原来的div标签属性，但内容并没有跟上。**
+
+### 利用提升层级来实现文字环绕效果
+
+```
+<body>
+    <div class="box1"></div>
+    <div class="box2">你你你你你你你你你你你你您你你你你你你你你你你你您你你你你你您你你你你您您你你你你你年</div>
+</body>
+
+<style>
+      .box1{
+          width: 100px;
+          height: 100px;
+          background: red;
+          float: left;
+      }
+      .box2{
+          width: 200px;
+          height: 210px;
+          background: yellow;
+      }
+</style>
+```
 
