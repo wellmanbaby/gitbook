@@ -8,6 +8,9 @@
      * [原型](part1/yaunxin.md)
      * [面试问题](part1/mianshi.md)
         * [JS数据类型](part1/type.md)
+        * [判断数据类型](part1/judge.md)
+        * [JS常见的dom操作](part1/dom.md)
+        * [解释一下事件冒泡和事件捕获](part1/maopao.md)
      * [Function](part1/function.md)
         * [call](part1/call.md)
         * [apply](part1/apply.md)
@@ -79,6 +82,8 @@
      * [8月24号](part2/day8.md)
      * [8月25号](part2/day9.md)
      * [8月26号](part2/day10.md)
+     * [8月27号](part2/day11.md)
+     * [8月28号](part2/day12.md)
   
   
   
