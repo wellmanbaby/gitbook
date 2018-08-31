@@ -14,6 +14,13 @@
         * [停止冒泡和默认行为](part1/stopbubble.md)
         * [闭包](part1/closuree.md)
         * [this](part1/this.md)
+        * [继承的多种方式和优缺点](part1/inherite.md)
+        * [Ajax](part1/ajax.md)
+        * [变量声明提升](part1/tisheng.md)
+        * [use strict](part1/strict.md)
+        * [==和===](part1/equal.md)
+        * [如何优化自己代码](part1/youhua.md)
+        * [请解释一下JavaScript的同源策略](part1/tongyuan.md)
      * [Function](part1/function.md)
         * [call](part1/call.md)
         * [apply](part1/apply.md)
@@ -87,6 +94,9 @@
      * [8月26号](part2/day10.md)
      * [8月27号](part2/day11.md)
      * [8月28号](part2/day12.md)
+     * [8月29号](part2/day13.md)
+     * [8月30号](part2/day14.md)
+     * [8月31号](part2/day15.md)
   
   
   
