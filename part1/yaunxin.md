@@ -324,3 +324,54 @@ String.prototype.sayHi = function(){
 var str2 = "小阳";
 str2.sayHi();
  ```
+# 把局部变量变成全局变量
+
+```
+//自执行函数
+//一次性的函数--声明的同时直接调用了
+//变量的值不会驻留在内存中
+<stript>
+  (function(){
+     console.log("函数")
+  )();
+</stript>
+```
+
+```
+//页面加载后，这个自调用函数的代码就执行完了
+(function(形参){
+    var num = 10;//局部变量
+})(实参)；
+console.log(num);//报错
+```
+
+```
+(function(win){
+    var num = 10;//局部变量
+    win.num = num;
+})(window);//window作为win的实参，函数执行时会把window复制给win，
+          //window是对象，对象之间的复制是引用的复制
+console.log(num);//10,在win对象上添加了num属性，window对象上也会有num属性，因此不用window.num
+```
+**如何把局部变量变成全局变量？**
+
+**把局部变量给window对象就可以了**
+
+# 产生随机数
+
+```
+//通过自执行函数产生一个随机数对象，在自执行函数外面，调用该随机数对象方法产生随机数
+(function(window){
+    //产生随机数的构造函数
+    function Random() {}
+    //在原型对象中添加方法
+    Random.prototype.getRandom = function(min,max){
+        return Math.floor(Math.random()*(max-min)+min);
+    };
+    //把Random对象暴露给顶级对象window让外部可以直接使用该对象
+    //给window一个Randow属性赋值一个Random函数
+    window.Random = Random;
+})(window)；
+var rm = new Random();
+console.log(rm.getRandom(0,5));
+```
