@@ -87,3 +87,18 @@ oAjax.onreadystatechange = function(){
 }
 }
 ```
+## 封装好以后只需要引用ajax()即可
+
+```
+<script src="xxx.js"></script>
+<script>
+ window.onload = function(){
+     var oBtn = document.getElementById('btn1');
+     oBtn.onclcik = function(){
+         ajax('url',function(str){
+             alert(str)
+         })
+     }
+ }
+</script>
+```

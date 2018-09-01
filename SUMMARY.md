@@ -21,6 +21,10 @@
         * [==和===](part1/equal.md)
         * [如何优化自己代码](part1/youhua.md)
         * [请解释一下JavaScript的同源策略](part1/tongyuan.md)
+        * [匿名函数的典型应用](part1/niming.md)
+        * [JS的宿主对象和原生对象的区别](part1/host.md)
+        * [document load](part1/load.md)
+        * [作用域](part1/zuoyongyu.md)
      * [Function](part1/function.md)
         * [call](part1/call.md)
         * [apply](part1/apply.md)
@@ -97,6 +101,7 @@
      * [8月29号](part2/day13.md)
      * [8月30号](part2/day14.md)
      * [8月31号](part2/day15.md)
+     * [9月1号](part2/day16.md)
   
   
   
