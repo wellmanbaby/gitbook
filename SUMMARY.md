@@ -69,6 +69,10 @@
       * [attribute和property的区别](part1/property.md)
       * [流式布局](part1/liushi.md)
       * [移动端布局方案](part1/yidong.md)
+      * [BFC](part1/bfc.md)
+      * [雪碧图](part1/xuebi.md)
+      * [CSS加载方式](part1/cssload.md)
+      * [SVG](part1/svg.md)
   * [HTML](part1/html.md)
      * [HTML5的新特性](part2/html1.md)
      * [标准模式和怪异模式](part2/html2.md)
@@ -102,6 +106,8 @@
      * [8月30号](part2/day14.md)
      * [8月31号](part2/day15.md)
      * [9月1号](part2/day16.md)
+     * [9月2号](part2/day17.md)
+     * [9月4号](part2/day18.md)
   
   
   
