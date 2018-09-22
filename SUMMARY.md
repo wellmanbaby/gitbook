@@ -21,6 +21,7 @@
         * [use strict](part1/strict.md)
         * [==和===](part1/equal.md)
         * [如何优化自己代码](part1/youhua.md)
+        * [前端性能优化](part1/improvee.md)
         * [请解释一下JavaScript的同源策略](part1/tongyuan.md)
         * [匿名函数的典型应用](part1/niming.md)
         * [JS的宿主对象和原生对象的区别](part1/host.md)
