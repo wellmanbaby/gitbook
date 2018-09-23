@@ -93,6 +93,8 @@
      * [HTML常用标签](part2/html13.md)
      * [为什么要少用iframe](part2/html14.md)
      * [HTML语义化理解](part2/html15.md)
+     * [移动端适配方案之flexible.js](part2/flexible.md)
+     * [移动端适配方案rem+vw](part2/vw.md)
   * [学习安排](README.md)
      * [8月15号](part2/day1.md)
      * [8月16号](part2/day2.md)
