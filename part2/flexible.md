@@ -55,9 +55,9 @@ div {
 ## 手动配置dpr
 
 引入执行js之前，可以通过输出meta标签方式来手动设置dpr。语法如下：
-
+```
 <meta name="flexible" content="initial-dpr=2,maximum-dpr=3" />
-
+```
 其中initial-dpr会把dpr强制设置为给定的值，maximum-dpr会比较系统的dpr和给定的dpr，取最小值。**注意：这两个参数只能选其一**。
 
 ## viewport的meta标签
